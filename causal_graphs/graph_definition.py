@@ -245,7 +245,7 @@ class CausalDAGDataset(CausalDAG):
             data_int = data_int.astype(np.int32)
 
         if data_obs.dtype == np.int32:
-            num_categs = data_obs.max(axis=-1)
+            num_categs = data_obs.max(axis=0)
             new_dist = lambda i : CategoricalDist(num_categs[i]+1, None)
         elif data_obs.dtype == np.float32:
             new_dist = lambda i : ContinuousProbDist()
