@@ -109,7 +109,7 @@ If your causal graph/dataset is specified in a `.bif` format as the real-world g
 Both data types are supported in this repository. Simply make sure that the numpy array has the data type `np.float32` for continuous experiments, and `np.uint8` or `np.int32` for categorical data.  
 
 </details>
-
+<!--
 ## Citation
 If you use this code, please consider citing our work:
 ```bibtex
@@ -121,3 +121,4 @@ If you use this code, please consider citing our work:
  year = {2022}
 }
 ```
+-->
